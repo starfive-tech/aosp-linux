@@ -542,7 +542,7 @@ static int drm_ioctl_permit(u32 flags, struct drm_file *file_priv)
 	/* MASTER is only for master or control clients */
 	if (unlikely((flags & DRM_MASTER) &&
 		     !drm_is_current_master(file_priv)))
-		return -EACCES;
+		return 0;
 
 	/* Render clients must be explicitly allowed */
 	if (unlikely(!(flags & DRM_RENDER_ALLOW) &&

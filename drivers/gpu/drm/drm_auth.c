@@ -66,7 +66,7 @@ static bool drm_is_current_master_locked(struct drm_file *fpriv)
 	lockdep_assert_once(lockdep_is_held(&fpriv->master_lookup_lock) ||
 			    lockdep_is_held(&fpriv->minor->dev->master_mutex));
 
-	return fpriv->is_master && drm_lease_owner(fpriv->master) == fpriv->minor->dev->master;
+	return fpriv->is_master && (drm_lease_owner(fpriv->master) == fpriv->minor->dev->master);
 }
 
 /**
