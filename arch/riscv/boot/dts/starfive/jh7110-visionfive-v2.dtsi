@@ -521,13 +521,13 @@
        };
 
        pmic: axp15060_reg@36 {
-               compatible = "stf,axp15060-regulator";
+               compatible = "x-powers,axp15060";
                reg = <0x36>;
 
                regulators {
                        mipi_0p9: ALDO1 {
                                regulator-boot-on;
-                               regulator-compatible = "mipi_0p9";
+                               regulator-compatible = "aldo1";
                                regulator-name = "mipi_0p9";
                                regulator-min-microvolt = <900000>;
                                regulator-max-microvolt = <900000>;
@@ -535,7 +535,7 @@
 
                        hdmi_0p9: ALDO5 {
                                regulator-boot-on;
-                               regulator-compatible = "hdmi_0p9";
+                               regulator-compatible = "aldo5";
                                regulator-name = "hdmi_0p9";
                                regulator-min-microvolt = <900000>;
                                regulator-max-microvolt = <900000>;
@@ -543,7 +543,7 @@
 
                        hdmi_1p8: ALDO3 {
                                regulator-boot-on;
-                               regulator-compatible = "hdmi_1p8";
+                               regulator-compatible = "aldo3";
                                regulator-name = "hdmi_1p8";
                                regulator-min-microvolt = <1800000>;
                                regulator-max-microvolt = <1800000>;
@@ -552,7 +552,7 @@
                        sdio_vdd: ALDO4 {
                                regulator-boot-on;
                                regulator-always-on;
-                               regulator-compatible = "sdio_vdd";
+                               regulator-compatible = "aldo4";
                                regulator-name = "sdio_vdd";
                                regulator-min-microvolt = <1800000>;
                                regulator-max-microvolt = <1800000>;
@@ -561,7 +561,7 @@
                        vcc_3v3: DCDC1 {
                                regulator-boot-on;
                                regulator-always-on;
-                               regulator-compatible = "vcc_3v3";
+                               regulator-compatible = "dcdc1";
                                regulator-name = "vcc_3v3";
                                regulator-min-microvolt = <3300000>;
                                regulator-max-microvolt = <3300000>;
@@ -570,7 +570,7 @@
                        cpu_vdd: DCDC2 {
                                regulator-boot-on;
                                regulator-always-on;
-                               regulator-compatible = "cpu_vdd";
+                               regulator-compatible = "dcdc2";
                                regulator-name = "cpu_vdd";
                                regulator-min-microvolt = <500000>;
                                regulator-max-microvolt = <1540000>;
