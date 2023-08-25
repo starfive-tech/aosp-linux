@@ -175,7 +175,7 @@
 			starfive,pin-gpio-doen = <OEN_LOW>;
 		};
 
-		 emmc1-pins1 {
+		emmc1-pins1 {
 			starfive,pins = <PAD_GPIO38>;
 			starfive,pinmux = <PAD_GPIO38_FUNC_SEL 0>;
 			starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)))>;
@@ -238,22 +238,22 @@
 		};
 
 		emmc1-pins8 {
-                       starfive,pins = <PAD_GPIO39>;
-                       starfive,pinmux = <PAD_GPIO39_FUNC_SEL 0>;
-                       starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)))>;
-                       starfive,pin-gpio-dout = <GPO_SDIO1_CDATA_OUT_5>;
-                       starfive,pin-gpio-doen = <OEN_SDIO1_CDATA_OUT_EN_5>;
-                       starfive,pin-gpio-din =  <GPI_SDIO1_CDATA_IN_5>;
-                };
+			starfive,pins = <PAD_GPIO39>;
+			starfive,pinmux = <PAD_GPIO39_FUNC_SEL 0>;
+			starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)))>;
+			starfive,pin-gpio-dout = <GPO_SDIO1_CDATA_OUT_5>;
+			starfive,pin-gpio-doen = <OEN_SDIO1_CDATA_OUT_EN_5>;
+			starfive,pin-gpio-din =  <GPI_SDIO1_CDATA_IN_5>;
+		};
 
 		emmc1-pins9 {
-                       starfive,pins = <PAD_GPIO46>;
-                       starfive,pinmux = <PAD_GPIO46_FUNC_SEL 0>;
-                       starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)))>;
-                       starfive,pin-gpio-dout = <GPO_SDIO1_CDATA_OUT_6>;
-                       starfive,pin-gpio-doen = <OEN_SDIO1_CDATA_OUT_EN_6>;
-                       starfive,pin-gpio-din =  <GPI_SDIO1_CDATA_IN_6>;
-                };
+			starfive,pins = <PAD_GPIO46>;
+			starfive,pinmux = <PAD_GPIO46_FUNC_SEL 0>;
+			starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)))>;
+			starfive,pin-gpio-dout = <GPO_SDIO1_CDATA_OUT_6>;
+			starfive,pin-gpio-doen = <OEN_SDIO1_CDATA_OUT_EN_6>;
+			starfive,pin-gpio-din =  <GPI_SDIO1_CDATA_IN_6>;
+		};
 
 		emmc1-pins10 {
 			starfive,pins = <PAD_GPIO47>;
@@ -926,7 +926,7 @@
 	};
 
 	sdcard0_pins: sdcard0-pins {
-		sdcard0-pins-rest {
+		 sdcard0-pins-rest {
 			starfive,pins = <PAD_GPIO24>;
 			starfive,pinmux = <PAD_GPIO24_FUNC_SEL 0>;
 			starfive,pin-ioconfig = <IO(GPIO_IE(1) | (GPIO_PU(1)) | GPIO_DS(3) | GPIO_SLEW(1))>;
@@ -1456,7 +1456,7 @@
 			starfive,pin-gpio-din =  <GPI_UART5_SIN>;
 		};
 
-		 uart5-pins-cts {
+		uart5-pins-cts {
 			starfive,pins = <PAD_GPIO29>;
 			starfive,pinmux = <PAD_GPIO29_FUNC_SEL 0>;
 			starfive,pin-ioconfig = <IO(GPIO_IE(1))>;

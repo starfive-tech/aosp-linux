@@ -476,6 +476,7 @@
 
 &mipi_dsi {
 	status = "okay";
+
 	port {
 		dsi_out_port: endpoint@0 {
 			remote-endpoint = <&panel_dsi_port>;
@@ -551,6 +552,7 @@
 
 		port@1 {
 			reg = <1>;
+
 			hdmi_out:endpoint {
 				remote-endpoint = <&tda998x_0_input>;
 			};
@@ -670,62 +672,62 @@
 };
 
 &tda988x_pin {
-       pinctrl-names = "default";
-       pinctrl-0 = <&rgb_pad_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&rgb_pad_pins>;
+	status = "disabled";
 };
 
 &tdm {
-       pinctrl-names = "default";
-       pinctrl-0 = <&tdm0_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&tdm0_pins>;
+	status = "disabled";
 };
 
 &trng {
-       status = "okay";
+	status = "okay";
 };
 
 &uart0 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart0_pins>;
-       status = "okay";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart0_pins>;
+	status = "okay";
 };
 
 &uart1 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart1_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart1_pins>;
+	status = "disabled";
 };
 
 &uart2 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart2_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart2_pins>;
+	status = "disabled";
 };
 
 &uart3 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart3_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart3_pins>;
+	status = "disabled";
 };
 
 &uart4 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart4_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart4_pins>;
+	status = "disabled";
 };
 
 &uart5 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&uart5_pins>;
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart5_pins>;
+	status = "disabled";
 };
 
 &usbdrd30 {
-       pinctrl-names = "default";
-       pinctrl-0 = <&usb_pins>;
-       dr_mode = "host"; /*host or peripheral*/
-       status = "disabled";
+	pinctrl-names = "default";
+	pinctrl-0 = <&usb_pins>;
+	dr_mode = "host"; /*host or peripheral*/
+	status = "disabled";
 };
 
 &vin_sysctl {
@@ -744,9 +746,9 @@
 			parallel_from_sc2235: endpoint@0 {
 				reg = <0>;
 				remote-endpoint = <&sc2235_to_parallel>;
-				bus-type = <5>;         /* Parallel */
+				bus-type = <5>;		/* Parallel */
 				bus-width = <8>;
-				data-shift = <2>;       /* lines 9:2 are used */
+				data-shift = <2>;	/* lines 9:2 are used */
 				hsync-active = <1>;
 				vsync-active = <0>;
 				pclk-sample = <1>;
@@ -794,14 +796,14 @@
 };
 
 &vpu_dec {
-       status = "okay";
+	status = "okay";
 };
 
 &vpu_enc {
-       status = "okay";
+	status = "okay";
 };
 
 &xrp {
-       memory-region = <&xrp_reserved>;
-       status = "okay";
+	memory-region = <&xrp_reserved>;
+	status = "okay";
 };

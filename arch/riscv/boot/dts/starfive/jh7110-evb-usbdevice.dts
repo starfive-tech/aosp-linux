@@ -14,8 +14,8 @@
 
 /* default sd card */
 &mmc0 {
-        assigned-clocks = <&clkgen JH7110_SDIO0_CLK_SDCARD>;
-        assigned-clock-rates = <50000000>;
+	assigned-clocks = <&clkgen JH7110_SDIO0_CLK_SDCARD>;
+	assigned-clock-rates = <50000000>;
 	pinctrl-names = "default";
 	pinctrl-0 = <&sdcard0_pins>;
 	max-frequency = <100000000>;
