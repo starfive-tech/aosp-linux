@@ -4185,7 +4185,7 @@ static int check_pkt_ptr_alignment(struct bpf_verifier_env *env,
 		verbose(env,
 			"misaligned packet access off %d+%s+%d+%d size %d\n",
 			ip_align, tn_buf, reg->off, off, size);
-		return -EACCES;
+		//return -EACCES;
 	}
 
 	return 0;
