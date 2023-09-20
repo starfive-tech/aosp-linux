@@ -658,7 +658,7 @@
 	post-power-on-delay-ms = <200>;
 	vmmc-supply = <&vcc_3v3>;
 	vqmmc-supply = <&sdio_vdd>;
-	status = "okay";
+	status = "disabled";
 };
 
 &mmc1 {
